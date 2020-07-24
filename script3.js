@@ -37,7 +37,7 @@ function end_game(temp) {
   if (temp['winner']=='draw') {
     winning_msg_text.innerText = 'Draw!'
   } else {
-      winning_msg_text.innerText = `${(temp['winner']=='x') ? "X's" : "O's"} Win!`
+      winning_msg_text.innerText = `${(document.getElementById("charachters").classList.contains('celebrate_human')) ? "You Won!" : "AI Wins!"} `
   }
   winning_msg.classList.add('show')
 }
