@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>board1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles1.css">
+        <script src="script1.js" defer></script>
+    </head>
+    <body>
+        <div class="container" style="padding-top: 0em;" >
+            <div class="row">
+                <div class="col-6" style="background-color: #e6f9ff;">
+                    <h1 style="font-family: 'Ranchers',cursive; margin-top: 70px; margin-bottom: 20px;" class="text-center">Player1 &nbsp; VS  &nbsp;Player2</h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card text-center" style=" margin-top: 50px;margin-bottom: 50px;width:12rem">
+                                <img src="hvh.jpg" class="card-img-top" height="200" width="200">
+                                <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Player 1</h5>
+                                <h4 style="font-family: 'Ranchers', cursive; font-size: 1.3rem;">Sign  'X'</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center" style=" margin-top: 50px;width:12rem">
+                                <img src="hvh2.png" class="card-img-top" height="200" width="200">
+                                <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Player 2</h5>
+                                <h4 style="font-family: 'Ranchers', cursive; font-size: 1.3rem;">Sign  'O'</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" style="background-color:#ffe6e6; ">
+                    <div class="index" id="index">
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winning-msg text-center" id="winning-msg">
+            <div data-winning-msg-text></div>
+            <button id="restartButton" class="btn b1" style="font-family: 'Ranchers', cursive;">Restart</button>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>board2</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles2.css">
+        <script src="script2.js" defer></script>
+    </head>
+    <body>
+        <div class="container" style="padding-top: 0em;" >
+            <div class="row">
+                <div class="col-6" style="background-color: #e6f9ff;">
+                    <h3 style="font-family: 'Ranchers',cursive; margin-top: 40px; margin-bottom: 8px;" class="text-center">Human &nbsp; VS &nbsp; AI</h3>
+                    <div class="row" id="charachters">
+                        <div class="col-6" > 
+                            <div class="card text-center" style=" margin-top: 30px;margin-bottom: 8px; width:12rem">
+                                <img src="human.png" class="card-img-top" height="180" width="200">
+                                <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Human</h5>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center" style=" margin-top: 30px; width:12rem">
+                                <img src="hvr.png" class="card-img-top" height="180" width="200">
+                                <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">AI</h5>
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field" style="font-family: 'Ranchers', cursive; margin-top: 20px;"> 
+                        <h4>Depth</h4>
+                        <div class="depth_choices" id="depth">
+                           <ul>
+                            <li data-value="1" class="btn b1" style="width: 17.5%;">1</li>
+                            <li data-value="2" class="btn b1" style="width: 17.5%;">2</li>
+                            <li data-value="3" class="btn b1" style="width: 17.5%;">3</li>
+                            <li data-value="4" class="btn b1" style="width: 17.5%;">4</li>
+                            <li data-value="-1" class="btn b1 , active" style="width: 17.5%;">Unlimited</li>
+                        </ul>
+                        </div>
+                    
+                    </div>
+                    <div class="field" style="font-family: 'Ranchers', cursive; margin-top: 20px;"> 
+                        <h4>Starting Player</h4>
+                        <div class="starting_player_choices" id="starting_player" style=" font-family: 'Ranchers', cursive; margin-top: 20px;"  > 
+                            <ul>
+                                <li data-value="1" class="btn b1 , active" style="width: 45%;margin-bottom: 15px">Human</li>
+                                <li data-value="0" class="btn b1" style="width: 45%;margin-bottom: 15px;">Computer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style=" font-family: 'Ranchers', cursive; margin-top: 20px;" > 
+                    
+                        <button type="button" class="btn b1" style="width: 45%;margin-bottom: 15px;margin-left: 23%;"id="newgame">New Game</button>
+                    </div>
+
+                </div>
+                <div class="col-6" style="background-color:#ffe6e6; ">
+                    <div class="index" id="board">
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="winning-msg text-center" id="winning-msg">
+            <div data-winning-msg-text></div>
+            <button id="restartButton" class="btn b1" style="font-family: 'Ranchers', cursive;">Go back!</button>
+        </div>
+     
+        
+    </body>
+</html>
